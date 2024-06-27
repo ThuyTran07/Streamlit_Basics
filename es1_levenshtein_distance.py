@@ -26,7 +26,7 @@ def levenshtein_distance(source, target):
 
     return l_matrix[-1, -1]
 
-
+@st.cache
 def load_vocab(file_path):
     with open(file_path, 'r') as f:
         lines = f.readlines()
