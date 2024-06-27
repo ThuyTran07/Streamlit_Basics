@@ -33,7 +33,7 @@ def load_vocab(file_path):
     words = sorted(set([line.strip().lower() for line in lines]))
     return words
 
-vocabs = load_vocab(file_path='./assets/vocab.txt')
+vocabs = load_vocab(file_path='./data/vocab.txt')
 
 def main():
     st.title("Word Correction using Levenshtein Distance")
